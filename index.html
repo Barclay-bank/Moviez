@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/39925eb8b5.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Net</title>
+</head>
+<body>
+    <div class="container"> 
+    <header>
+        <div class="text">
+        <h1 class="heading">MOVIENET</h1>
+    </div>
+        <div class="search">
+        <input type="text" placeholder="Search movie" id="search">
+        </div>
+    </header>
+
+    
+    <section class="showcase-1">
+        <div class="left">
+        <p class="section-text">
+            Thor: Love and Thunder
+        </p>
+        <span id="first">
+            Releasing 8 July
+        </span>
+        <div id="trailer">
+            
+        <a href="#"><img src="video.jpg" alt=""><p id="watch">Watch the trailer</p></a>
+    </div>
+        </div>
+
+        <div class="right">
+            <img src="FTe6Z_MVEAArAVK-1.jpg" alt="">
+        </div>
+        
+    </section>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#"><i class="fas fa-home" aria-hidden="true" x2></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-line-chart" aria-hidden="true" x2></i>Trending</a></li>
+            <li><a href="#"><i class="fa fa-film" aria-hidden="true"></i>Movies</a></li>
+            <li><a href="#"><i class="fa-brands fa-angular"></i>Anime</a></li>
+            
+        </ul>
+        <div class="ham">
+            <div class="dash1"></div>
+            <div class="dash2"></div>
+            <div class="dash3"></div>
+        </div>
+    </nav>
+    
+
+        <p class="pop">Popular Movies</p>
+
+    <div class="pop-m">
+
+        <div class="first">
+            <div id="inner-first">
+        <img src="lucifer.jpg" alt="">
+    </div>
+        <p>Lucifer</p>
+        <span>Action/Drama</span>
+        </div>
+
+        <div class="second">
+            <img src="squid.jpg" alt="">
+            <p>Squid Game</p>
+            <span>Action/Drama</span>
+           
+        </div>
+    
+        <div class="third">
+            <img src="Endgame.jpg" alt="">
+            <p>Avengers: Endgame</p>
+            <span>Action</span>
+           
+        </div>
+    
+        <div class="fourth">
+            <img src="wanda.jpg" alt="">
+            <p>WandaVision</p>
+            <span>Action/Drama</span>
+    </div>
+    <a href="#" class="more">See More ></a>
+    </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    const navSlide = () => {
+    const burger = document.querySelector('.ham');
+    const nav = document.querySelector('.nav-list');
+    const navLinks = document.querySelectorAll('.nav-list li');
+
+
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+    });
+
+}
+
+
+navSlide();
+</script>
+</body>
+</html>
+    
